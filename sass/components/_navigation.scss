@@ -10,7 +10,7 @@
   cursor: pointer;
   @extend %transition;
 
-  &hover {
+  &:hover {
     color: $color-primary;
   }
 }
