@@ -7,6 +7,7 @@
   line-height: 2.2rem;
   border-radius: 4px;
   cursor: pointer;
+  @extend %transition;
   &_bordered {
     background: $color-light;
     border: 1px solid $color-border;
@@ -27,4 +28,21 @@
   }
 }
 
+.link-button {
+  color: $color-primary;
+  @extend %font-add;
+  display: inline-flex;
+  align-items: center;
+  transition: 0.3s;
+  &:hover {
+    color: $color-red;
+    .ico_play {
+      background-image: url("../../img/icons/play.svg");
+    }
+  }
+}
+
+.link-button__text {
+  margin-left: 9px;
+}
 
